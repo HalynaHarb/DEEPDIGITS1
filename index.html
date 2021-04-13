@@ -7,47 +7,57 @@
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <!-- шапка -->
 <header class="deepdigits">
-    <div class="container flex-container">
+    <div class="container navigation">
         <!-- навігація -->
         <nav class="logo-nav">
-            <a href="./index.html" class="logo">
-                DEEPDIGITS
-            </a>
+            <a href="./index.html" class="logo">DEEPDIGITS</a>
         </nav>
         <button type="button" class="burger">
             <svg class="burger-item"><use href="./img/menu.svg#menu"></use></svg>
         </button>
+        <ul class="navigation-list">
+            <li class="list-anchor">
+              <a href="/" class="nav-anchor">Home</a>
+            </li>
+            <li class="list-anchor">
+              <a href="/" class="nav-anchor">Features</a>
+            </li>
+            <li class="list-anchor">
+              <a href="/" class="nav-anchor">Price</a>
+            </li>
+            <li class="list-anchor">
+              <a href="/" class="nav-anchor">Feedback</a>
+            </li>
+            <li class="list-anchor">
+              <a href="/" class="nav-anchor">Contact</a>
+            </li>
+          </ul>
+          <button type="button" class="nav-button">Get started</button>
     </div>
 </header>
 <!-- герой -->
 <main>  
     <section class="section-my-hero">
-        <div class="container">
-            <div class="button-position hero-banner">
-                <h1 class="hero-header">
-                    The best way <br>
-                    to organize <br>
-                    your work.
-                </h1>
-                <p class="hero-description">
-                    A good choice for promoting your product or service on the Internet. The main thing: fast, high quality, safe!
-                </p>
-                <button type="button" class="hero-button">
-                    Learn more
-                </button>
-                <img class="hero-image" src="./img/hero.png" alt="main">
-            </div>
+        <div class="container button-position hero-banner">
+                <div class="hero-first"><h1 class="hero-header">The best way to organize your work.</h1>
+                <p class="hero-description">A good choice for promoting your product or service on the Internet. The main thing: fast, high quality, safe!</p>
+                <button type="button" class="hero-button">Learn more</button>
+                </div>
+                <div class="hero-second"><img class="hero-image" src="./img/hero.png" alt="main">
+                </div>
         </div>
     </section>
 
     <!-- опис переваг -->
     <section class="section-feat">
-        <div class="container">
+        <div class="container features">
             <h2 hidden>Choose plan</h2>
             <h2 class="feat-header">Fast, effortless & simple<span class="dot-color">.</span></h2>
             <ul class="list-feat-descr ">
@@ -77,9 +87,10 @@
 
     <!--план, цифри, відгуки-->
     <section class="section-main">
+        <section class="section-plan">
         <div class="container">
             <h2 hidden>Plans</h2>
-            <h2 class="plan-header">Choose <br> the plan<span class="dot-color">.</span></h2>
+            <h2 class="plan-header">Choose the plan<span class="dot-color">.</span></h2>
             <ul class="plan-block">
                 <li class="plan-card">
                     <div class="plan-card-desc">
@@ -122,7 +133,7 @@
                             <span class="number-price"> <span class="dolar">$</span>19</span>
                             <span class="month">/month</span>
                         </div>
-                        <p class="plan-desc">More options with our <br> Premium plan!</p>
+                        <p class="plan-desc">More options with our Premium plan!</p>
                         <button type="button" class="plan-button">
                             Try it!
                         </button>
@@ -195,12 +206,25 @@
                     </div>
                 </li>
             </ul>
-            <p class="number-main">#1</p>
-            <p class="number-main-desc">SMM Agency in Europe</p>
-            <p class="number-main">10k</p>
-            <p class="number-main-desc">Active clients in 1<br> month</p>
-            <p class="number-main">$25M</p>
-            <p class="number-main-desc">Total value of profit</p>
+            <div class=block-number><ul class="number-main-list">
+                <li>
+                    <p class="number-main">#1</p>
+                    <p class="number-main-desc">SMM Agency in Europe</p>
+                </li>
+                <li>
+                    <p class="number-main">10k</p>
+                    <p class="number-main-desc">Active clients in 1<br> month</p>
+                </li>
+                <li>
+                    <p class="number-main">$25M</p>
+                    <p class="number-main-desc">Total value of profit</p>
+                </li>              
+            </ul>
+            </div>
+        </div>
+        </section>
+        <section class="section-review">
+            <div class="container">
             <h2 hidden>Reviews</h2>
             <h2 class="review-header">What is said by our clients<span class="dot-color">?</span></h2>
             <ul class="review-block">
@@ -258,69 +282,71 @@
                     </div>
                 </li>
             </ul>
-        </div>
+            </div>
+        </section>
     </section>
     <!--контактна форма-->
     <section class="section-contact">
         <div class="container">
             <h2 hidden>Contact us</h2>
             <h2 class="contact-header">Let's talk<span class="dot-color">!</span></h2>
-            <p class="contact-desc">Leave your details and we will contact you shortly!</p>
-            <ul class="contact-list">
-                <li class="contact-list-item">
-                    <svg class="phone-svg"><use href="../img/phone.svg#phone"></use></svg>
-                    <a href="tel:+338659045305"><p class="contact-item-desc">+33 (8)6 59 04 53 05</p></a>
-                </li>
-                <li class="contact-list-item">
-                    <svg class="envelope-svg"><use href="../img/envelope.svg#envelope"></use></svg>
-                    <a href="mailto:deepdigits@info.com"><p class="contact-item-desc">deepdigits@info.com</p></a>
-                </li>
-                <li class="contact-list-item">
-                    <svg class="location-svg"><use href="../img/location.svg#location"></use></svg>
-                    <a href="https://goo.gl/maps/saEyJfc1wp9ZSpQ79"><p class="contact-item-desc">38240 Meylan, Grenoble</p></a>
-                </li>
-            </ul>
-            <ul class="social-list">
-                <li class="social-list-item">
-                    <a href="/"><svg class="linkedin"><use href="./img/linkedin.svg#linkedin"></use></svg></a>
-                </li>
-                <li class="social-list-item">
-                     <a href="/"><svg class="telegram"><use href="./img/telegram.svg#telegram"></use></svg></a>
-                </li>
-                <li class="social-list-item">
-                     <a href="/"><svg class="instagram"><use href="./img/instagram.svg#instagram"></use></svg></a>
-                </li>
-                <li class="social-list-item">
-                     <a href="/"><svg class="facebook"><use href="./img/facebook.svg#facebook"></use></svg></a>
-                </li>
-            </ul>
-            <div class="contact-block">
-                <ul class="form-input">
-                    <li class="form-input-list"><label>
-                        <input type="text" name="user-name" class="form-input-item" placeholder="Name" required>
-                    </label></li>
-                    <li class="form-input-list"><label>
-                        <input type="email" name="user-email" class="form-input-item" placeholder="E-mail" required>
-                    </label></li>
-                    <li class="form-input-list"><label>
-                        <input type="tel" name="user-phone" class="form-input-item" placeholder="Phone" required>
-                    </label></li>
-                    <li class="form-input-list"><label>
-                        <textarea name="user-message" class="contact-form" placeholder="Message"></textarea>
-                    </label></li>
+            <div class="contact-main">
+                <div class="contact-first">
+                <p class="contact-desc">Leave your details and we will contact you shortly!</p>
+                <ul class="contact-list">
+                    <li class="contact-list-item">
+                        <svg class="phone-svg"><use href="../img/phone.svg#phone"></use></svg>
+                        <a href="tel:+338659045305"><p class="contact-item-desc">+33 (8)6 59 04 53 05</p></a>
+                    </li>
+                    <li class="contact-list-item">
+                        <svg class="envelope-svg"><use href="../img/envelope.svg#envelope"></use></svg>
+                        <a href="mailto:deepdigits@info.com"><p class="contact-item-desc">ddigits@info.com</p></a>
+                    </li>
+                    <li class="contact-list-item">
+                        <svg class="location-svg"><use href="../img/location.svg#location"></use></svg>
+                        <a href="https://goo.gl/maps/saEyJfc1wp9ZSpQ79"><p class="contact-item-desc">38240 Meylan, Grenoble</p></a>
+                    </li>
                 </ul>
-                <button type="submit" class="contact-button">Send Message</button>
+                <ul class="social-list">
+                    <li class="social-list-item">
+                        <a href="/"><svg class="linkedin"><use href="./img/linkedin.svg#linkedin"></use></svg></a>
+                    </li>
+                    <li class="social-list-item">
+                        <a href="/"><svg class="telegram"><use href="./img/telegram.svg#telegram"></use></svg></a>
+                    </li>
+                    <li class="social-list-item">
+                        <a href="/"><svg class="instagram"><use href="./img/instagram.svg#instagram"></use></svg></a>
+                    </li>
+                    <li class="social-list-item">
+                        <a href="/"><svg class="facebook"><use href="./img/facebook.svg#facebook"></use></svg></a>
+                    </li>
+                </ul>
+                </div>
+            
+                <div class=main-contact-block>
+                <div class="contact-block">
+                    <ul class="form-input">
+                        <li class="form-input-list"><label>
+                            <input type="text" name="user-name" class="form-input-item" placeholder="Name" required>
+                        </label></li>
+                        <li class="form-input-list"><label>
+                            <input type="email" name="user-email" class="form-input-item" placeholder="E-mail" required>
+                        </label></li>
+                        <li class="form-input-list"><label>
+                            <input type="tel" name="user-phone" class="form-input-item" placeholder="Phone" required>
+                        </label></li>
+                        <li class="form-input-list"><label>
+                            <textarea name="user-message" class="contact-form" placeholder="Message"></textarea>
+                        </label></li>
+                    </ul>
+                    <button type="submit" class="contact-button">Send</button>
+                </div>
+                </div>
             </div>
-        </div>
-    </section>
-    
-    <!--футер-->
-    <footer class="footer-section">
-        <div class="container">
             <p class="footer-name">DEEPDIGITS</p>
             <p class="footer-copyright">Copyright © 2021 DEEPDIGITS</p>
         </div>
-    </footer>
+    </section>
 </main>
 </body>
 </html>
