@@ -146,6 +146,8 @@ header {
     border: none;
     color: #FFFFFF;
     margin-bottom: 40px;
+    text-align: center;
+    padding-top: 8px;    
 }
 .hero-button:focus,
 .hero-button:hover {
@@ -700,6 +702,7 @@ header {
 
 /*footer*/
 
+
 .footer-name {
     font: normal normal bold 30px Poppins;
     letter-spacing: 8.87px;
@@ -713,6 +716,7 @@ header {
     color: #904CCA;
     margin-bottom: 25px;
 }
+
 
 input, textarea { 
     color: #bf9bd3;
@@ -909,6 +913,16 @@ input::-moz-placeholder, textarea::-moz-placeholder{
 }
 
 
+video {
+    position: absolute;
+    top: 80px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
 @media screen and (max-width:380px) {
     .navigation {
         padding-left: 30px;
@@ -1090,6 +1104,8 @@ input::-moz-placeholder, textarea::-moz-placeholder{
         font: normal normal 600 28px Poppins;
         margin: 0;
         padding: 0;
+        text-align: center;
+        padding-top: 11px;
     }
 
     .hero-second {
@@ -1485,7 +1501,12 @@ input::-moz-placeholder, textarea::-moz-placeholder{
         font: normal normal 600 20px Poppins;
         margin-bottom: 25px;
     }
-   
+
+    video {
+        position: absolute;
+        top: 96px;
+        height: 100%;
+    }
 }
 @media screen and (min-width: 1740px) {
     .section-review {
