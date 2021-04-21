@@ -382,21 +382,31 @@
             
                 <div class=main-contact-block>
                 <div class="contact-block">
-                    <ul class="form-input">
-                        <li class="form-input-list"><label>
-                            <input type="text" name="user-name" class="form-input-item" placeholder="Name" required>
-                        </label></li>
-                        <li class="form-input-list"><label>
-                            <input type="email" name="user-email" class="form-input-item" placeholder="E-mail" required>
-                        </label></li>
-                        <li class="form-input-list"><label>
-                            <input type="tel" name="user-phone" class="form-input-item" placeholder="Phone" required>
-                        </label></li>
-                        <li class="form-input-list"><label>
-                            <textarea name="user-message" class="contact-form" placeholder="Message"></textarea>
-                        </label></li>
-                    </ul>
-                    <button type="submit" class="contact-button">Send</button>
+                    <form action="#">
+                        <fieldset class="form-input">  
+                            <div class="form-input-list">
+                                <label>
+                                    <input type="text" name="user-name" class="form-input-item" placeholder="Name" required>
+                                </label>
+                            </div>
+                            <div class="form-input-list">
+                                <label>
+                                    <input type="email" name="user-email" class="form-input-item" placeholder="E-mail" required>
+                                </label>
+                            </div>
+                            <div class="form-input-list">
+                                <label>
+                                    <input type="tel" name="user-phone" class="form-input-item" placeholder="Phone" required>
+                                </label>
+                            </div>
+                            <div class="form-input-list">
+                                <label>
+                                    <textarea name="user-message" class="contact-form" placeholder="Message"></textarea>
+                                </label>
+                            </div>
+                            <button type="submit" class="contact-button">Send</button>
+                        </fieldset>
+                    </form>
                 </div>
                 </div>
             </div>

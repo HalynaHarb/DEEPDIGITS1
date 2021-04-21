@@ -469,6 +469,7 @@ header {
 .review-block {
     padding: 0;
 }
+
 .client-img {
     display: flex;
     align-items: center;
@@ -684,15 +685,22 @@ header {
     width: 80%;
     height: 41px;
     padding: 0;
-    background: #FD829C 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: -6px -6px 11px #7171712B,6px 6px 11px #0000002B;
     font: normal normal 600 20px Poppins;
     cursor: pointer;
     text-align: center;
     border-radius: 20px;
-    border: none;
-    color: #FFFFFF; 
+    border-color: #FD829C;
+    border-style: solid;
+    border-width: 4px;
+    color: #FD829C; 
     margin-bottom: 30px;
+}
+
+.contact-button:hover {
+    background: #FD829C 0% 0% no-repeat padding-box;
+    color: #FFFFFF; 
 }
 
 .contact-button:focus,
@@ -911,15 +919,50 @@ input::-moz-placeholder, textarea::-moz-placeholder{
     visibility: visible;
     left: 0;
 }
-
+/*video.html*/
 
 video {
-    position: absolute;
-    top: 80px;
-    height: 100%;
-    width: 100%;
+    padding-top: 80px;
+    height: 100vh;
+    width: 100vw;
     object-fit: cover;
-    z-index: -1;
+}
+
+.cases {
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.cases-header {
+    font: normal normal bold 50px Poppins;
+    letter-spacing: 0px;
+    color: #904CCA;
+}
+
+.cases-header-3 {
+    font: normal normal bold 24px/27px Poppins;
+    letter-spacing: 0px;
+    color: #b980eb;
+    padding-bottom: 20px;
+}
+
+.cases-p {
+    text-align: center;
+    font: normal normal normal 20px/25px Poppins;
+    background-color: #b980eb;
+    padding: 15px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.cases-img {
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -1503,9 +1546,41 @@ video {
     }
 
     video {
-        position: absolute;
-        top: 96px;
-        height: 100%;
+        padding-top: 96px;
+    }
+    .cases-flex {
+        display: flex;
+        margin-top: 30px;
+        align-items: center;
+    }
+
+    .cases-flex-1 {
+        width: 60%;
+    }
+
+    .cases-flex-2 {
+        width: 40%;
+        height: 40%;
+    }
+
+    .cases-header {
+        font: normal normal bold 60px Poppins;
+    }
+
+    .cases-header-3 {
+        font: normal normal bold 30px/30px Poppins;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cases-p {
+        font: normal normal normal 24px/30px Poppins;
+        padding: 40px;
+    }
+
+    .footer-video .footer-name {
+        padding-top: 0;
     }
 }
 @media screen and (min-width: 1740px) {
